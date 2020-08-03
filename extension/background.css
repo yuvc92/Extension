@@ -1,0 +1,27 @@
+html[notifs="true"] #buttons.ytd-masthead > ytd-notification-topbar-button-renderer.ytd-masthead,
+html[left="true"]:not(.yt-signed-out) #sections > ytd-guide-section-renderer:nth-child(n+2):nth-child(-n+3),
+html[left="true"].yt-signed-out #sections > ytd-guide-section-renderer:nth-child(n+4):nth-child(-n+6),
+card-list-renderer,
+html[cards="true"] .ytp-ce-element, ytd-primetime-promo-renderer, 
+#masthead-ad.ytd-rich-grid-renderer.style-scope,
+html[feed="true"] ytd-browse[page-subtype="home"],
+div#home-page-skeleton,
+html:not([feed]) ytd-browse[page-subtype="home"] #contents,
+html:not([feed]) ytd-browse[page-subtype="home"] #grid-title,
+html[sidebar="true"][dimension="true"][is_fs="false"] #secondary,
+html:not([sidebar]) #secondary-inner,
+html[recommended="true"] #related, html[recommended="true"] .ytp-pause-overlay,
+html[chat="true"] ytd-live-chat-frame#chat,
+html[endscreen="true"] .html5-endscreen, 
+html[comments="true"] #comments,
+ytd-mealbar-promo-renderer[dialog], 
+paper-dialog > ytd-single-option-survey-renderer[dialog][dialog][dialog] {
+	display: none;
+}
+html[header="true"] #page-manager.ytd-app, 
+html[header="true"] #header.ytd-c4-tabbed-header-renderer {
+    margin-top: 0;
+}
+html[header="true"] ytd-mini-guide-renderer.ytd-app {
+	top: 0;
+}
